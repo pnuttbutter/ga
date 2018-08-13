@@ -1,5 +1,5 @@
 """
-copy all filters from one view to another
+get all filters from one view to another
 """
 
 
@@ -103,8 +103,11 @@ if __name__ == '__main__':
             a_edit.management().filters().insert(accountId=dest_account, body=dest_filter).execute()
             mu.update_log(log_file, 'SUCCESS - ' + dest_filter['name'])
         except Exception as e:
-            mu.update_log(log_file, 'FAIL - ' + dest_filter['name']) 
+            mu.update_log(log_file, 'FAIL - ' + dest_filter['name'])
+            return_value = 2
+            pass
 
+    ## finalise
     mu.update_log(log_file, 'complete - return code = ' + str(return_value))
     sys.exit(return_value)
         
