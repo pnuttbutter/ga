@@ -1,0 +1,163 @@
+[
+    {
+        "name": "id",
+        "type": "INTEGER",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "kind",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "selfLink",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "accountId",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "webPropertyId",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "internalWebPropertyId",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "currency",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "timezone",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "websiteUrl",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "defaultPage",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "excludeQueryParameters",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "sitesearchQueryParameters",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "stripSiteSearchQueryParameters",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "siteSearchCategoryParameters",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "stripSiteSearchCategoryParameters",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "created",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "updated",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "eCommerceTracking",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "enhancedECommerceTracking",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "botFilteringEnabled",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "starred",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "parentLink",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "type",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "href",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ],
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "childLink",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "type",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "href",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ],
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "permissions",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "effective",
+                "type": "STRING",
+                "mode": "REPEATED"
+            }
+        ],
+        "mode": "NULLABLE"
+    }
+]

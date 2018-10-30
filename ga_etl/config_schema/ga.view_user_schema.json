@@ -1,0 +1,169 @@
+[
+    {
+        "name": "id",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "kind",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "selfLink",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "entity",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "accountRef",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "kind",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "href",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ],
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "webPropertyRef",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "kind",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "href",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "accountId",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "internalWebPropertyId",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ],
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "profileRef",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "kind",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "href",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "accountId",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "webPropertyId",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "internalWebPropertyId",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ],
+                "mode": "NULLABLE"
+            }
+        ],
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "userRef",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "kind",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "id",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "email",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ],
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "permissions",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "effective",
+                "type": "STRING",
+                "mode": "REPEATED"
+            },
+            {
+                "name": "local",
+                "type": "STRING",
+                "mode": "REPEATED"
+            }
+        ],
+        "mode": "NULLABLE"
+    }
+]

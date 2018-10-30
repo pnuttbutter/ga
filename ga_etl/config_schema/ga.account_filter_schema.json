@@ -1,0 +1,269 @@
+[
+    {
+        "name": "kind",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "created",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "updated",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "accountId",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "selfLink",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "parentLink",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "href",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "type",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "includeDetails",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "field",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "kind",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "matchType",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "expressionValue",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "caseSensitive",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldIndex",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "excludeDetails",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "field",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "kind",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "matchType",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "expressionValue",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "caseSensitive",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldIndex",
+                "type": "INTEGER",
+		"mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "lowercaseDetails",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "field",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "kind",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "matchType",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "expressionValue",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "caseSensitive",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldIndex",
+                "type": "INTEGER",
+		"mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "advancedDetails",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "overrideOutputField",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldARequired",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "outputConstructor",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldBRequired",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "caseSensitive",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "extractA",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldA",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "outputToField",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "extractB",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldB",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldAIndex",
+                "type": "INTEGER",
+		"mode": "NULLABLE"
+            },
+            {
+                "name": "fieldBIndex",
+                "type": "INTEGER",
+		"mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "searchAndReplaceDetails",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "field",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "searchString",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "replaceString",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "caseSensitive",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "fieldIndex",
+                "type": "INTEGER",
+		"mode": "NULLABLE"
+            }
+        ]
+    }
+]

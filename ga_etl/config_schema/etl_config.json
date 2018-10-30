@@ -1,0 +1,83 @@
+[
+	{
+		"destination_table"	: "account"
+		, "source_file"		: "account.json"
+		, "schema_file"		: "ga.account_schema.json"
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+	,
+	{
+		"destination_table" 	: "property"
+		, "source_file"		: "property.json"
+		, "schema_file"		: "ga.property_schema.json"	
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+	,
+	{
+		"destination_table"	: "view"
+		, "source_file"		: "view.json"
+		, "schema_file"		: "ga.view_schema.json"	
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+	,
+	{
+		"destination_table"	: "custom_dimension"
+		, "source_file"		: "custom_dimension.json"
+		, "schema_file"		: "ga.custom_dimension_schema.json"	
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+	,
+	{
+		"destination_table"	: "account_filter"
+		, "source_file"		: "account_filter.json"
+		, "schema_file"		: "ga.account_filter_schema.json"	
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+	,
+	{
+		"destination_table"	: "view_filter"
+		, "source_file"		: "view_filter.json"
+		, "schema_file"		: "ga.view_filter_schema.json"	
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+	,
+	{
+		"destination_table"	: "account_user"
+		, "source_file"		: "account_user.json"
+		, "schema_file"		: "ga.account_user_schema.json"	
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+	,
+	{
+		"destination_table"	: "property_user"
+		, "source_file"		: "property_user.json"
+		, "schema_file"		: "ga.property_user_schema.json"	
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+	,
+	{
+		"destination_table"	: "view_user"
+		, "source_file"		: "view_user.json"
+		, "schema_file"		: "ga.view_user_schema.json"	
+		, "write_disposition"	: "WRITE_TRUNCATE"	
+		, "source_format"	: "NEWLINE_DELIMITED_JSON"
+		, "dataset"		: "ga"
+	}
+]
+	

@@ -1,0 +1,96 @@
+[
+    {
+        "name": "kind",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "rank",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "filterRef",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "kind",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "href",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "accountId",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            }
+        ],
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "profileRef",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "kind",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "internalWebPropertyId",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "href",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "webPropertyId",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "accountId",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            }
+        ],
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "id",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "selfLink",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    }
+]
